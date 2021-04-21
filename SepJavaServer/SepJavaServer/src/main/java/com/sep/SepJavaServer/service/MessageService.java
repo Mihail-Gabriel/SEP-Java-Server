@@ -1,8 +1,11 @@
 package com.sep.SepJavaServer.service;
 
-import com.sep.SepJavaServer.model.Message;
+
+
+import java.io.IOException;
+import java.util.ArrayList;
 
 public interface MessageService {
-    Message getMessage();
-    void saveMessage(Message message);
+    String getMessage() throws IOException;
+    void saveMessage(String message) throws IOException;
 }
