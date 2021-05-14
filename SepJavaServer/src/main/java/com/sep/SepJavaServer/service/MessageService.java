@@ -21,10 +21,4 @@ public class MessageService implements IMessageService {
         return client.getMessageFromDb();
     }
 
-    @Override
-    public void saveMessage(String message) throws IOException {
-        DatabaseClient client = new DatabaseClient();
-        client.saveMessageToDb(message);
-
-    }
 }

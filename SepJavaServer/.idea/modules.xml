@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/SepJavaServer.iml" filepath="$PROJECT_DIR$/.idea/SepJavaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SepJavaServer.iml" filepath="$PROJECT_DIR$/SepJavaServer.iml" />
     </modules>
   </component>
 </project>

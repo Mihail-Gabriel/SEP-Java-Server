@@ -17,18 +17,9 @@ public class MessageController {
     @Autowired
     IMessageService service;
 
-
     @GetMapping("/getmessage")
     public String getMessage() throws IOException {
-        System.out.println("in message controller");
         return service.getMessage();
-    }
-
-    @PostMapping("/savemessage")
-    public void saveMessage(@RequestBody String message) throws IOException {
-        service.saveMessage(message);
-
-
     }
 
 }

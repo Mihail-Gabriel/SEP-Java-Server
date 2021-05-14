@@ -3,36 +3,44 @@ package com.sep.model;
 import java.io.Serializable;
 
 
-public class User implements Serializable {
+public class Users implements Serializable {
 
-    private String name;
+    private String username;
     private String password;
-    private String email;
     private String address;
     private String telephoneNo;
+    private String city;
+    private String role;
 
-    public User(String name, String password, String email, String address, String telephoneNo) {
-        this.name = name;
+
+    public Users(String username, String password, String address, String telephoneNo, String city, String role) {
+        this.username = username;
         this.password = password;
-        this.email = email;
         this.address = address;
         this.telephoneNo = telephoneNo;
+        this.city = city;
+        this.role = role;
     }
 
-    public String getName() {
-        return name;
+    public Users() {
+
     }
 
-    public void setName(String name) {
-        this.name = name;
+
+    public String getRole() {
+        return role;
     }
 
-    public String getEmail() {
-        return email;
+    public void setRole(String role) {
+        this.role = role;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getPassword() {
@@ -57,5 +65,13 @@ public class User implements Serializable {
 
     public void setTelephoneNo(String telephoneNo) {
         this.telephoneNo = telephoneNo;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }
