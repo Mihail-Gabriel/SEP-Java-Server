@@ -15,8 +15,8 @@ public class UserController {
     IUserService userService;
 
     @PostMapping("/register")
-    public String register(@RequestBody String username, String password, String address, String telephoneNo, String city, String role) throws IOException {
-        return userService.registerUser(username,password,address,telephoneNo,city,role);
+    public String register(@RequestBody String jsonBody) throws IOException {
+        return userService.registerUser(jsonBody);
     }
 
     @GetMapping("/view")
@@ -26,7 +26,7 @@ public class UserController {
     }
 
     @GetMapping("/login")
-    public Users login(@RequestBody String username, String password){
+    public Users login(@RequestBody String username, String password) throws IOException {
         Users loggedInUsers = userService.loginUser(username,password);
         return loggedInUsers;
     }

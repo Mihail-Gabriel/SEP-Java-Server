@@ -15,16 +15,15 @@ public class UserService implements IUserService{
     }
 
     @Override
-    public String registerUser(String username, String password, String address, String telephoneNo, String city, String role) throws IOException {
+    public String registerUser(String jsonBody) throws IOException {
         DatabaseClient databaseClient= new DatabaseClient();
-        return databaseClient.registerUser(username,password,address,telephoneNo,city,role);
+        return databaseClient.registerUser(jsonBody);
     }
 
     @Override
-    public Users loginUser(String email, String password) {
+    public Users loginUser(String username, String password) throws IOException {
         DatabaseClient databaseClient= new DatabaseClient();
-
-        return null;
+        return databaseClient.loginUser(username,password);
     }
 
     @Override
