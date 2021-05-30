@@ -25,7 +25,7 @@ public class UserController {
         return viewedUsers;
     }
 
-    @GetMapping("/login")
+    @PostMapping("/login")
     public Users login(@RequestBody String username, String password) throws IOException {
         Users loggedInUsers = userService.loginUser(username,password);
         return loggedInUsers;
