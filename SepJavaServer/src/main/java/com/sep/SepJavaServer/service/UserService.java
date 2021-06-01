@@ -21,9 +21,9 @@ public class UserService implements IUserService{
     }
 
     @Override
-    public Users loginUser(String username, String password) throws IOException {
+    public Users loginUser(String usernamePassword) throws IOException {
         DatabaseClient databaseClient= new DatabaseClient();
-        return databaseClient.loginUser(username,password);
+        return databaseClient.loginUser(usernamePassword);
     }
 
     @Override

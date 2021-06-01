@@ -6,7 +6,7 @@ import java.io.IOException;
 
 public interface IUserService {
     String registerUser(String jsonBody) throws IOException;
-    Users loginUser(String username, String password) throws IOException;
+    Users loginUser(String usernamePassword) throws IOException;
     void deleteUser(String username);
     Users viewUser(String username);
 }

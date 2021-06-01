@@ -10,16 +10,16 @@ public class Users implements Serializable {
     private String address;
     private String telephoneNo;
     private String city;
-    private String securityLevel;
+    private String role;
 
 
-    public Users(String username, String password, String address, String telephoneNo, String city, String securityLevel) {
+    public Users(String username, String password, String address, String telephoneNo, String city, String role) {
         this.username = username;
         this.password = password;
         this.address = address;
         this.telephoneNo = telephoneNo;
         this.city = city;
-        this.securityLevel = securityLevel;
+        this.role = role;
     }
 
     public Users() {
@@ -27,12 +27,12 @@ public class Users implements Serializable {
     }
 
 
-    public String getSecurityLevel() {
-        return securityLevel;
+    public String getRole() {
+        return role;
     }
 
-    public void setSecurityLevel(String role) {
-        this.securityLevel = securityLevel;
+    public void setRole(String role) {
+        this.role = this.role;
     }
 
     public String getUsername() {

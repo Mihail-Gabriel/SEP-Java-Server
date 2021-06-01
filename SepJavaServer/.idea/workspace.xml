@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="74f22d85-541e-41ce-9cf7-9c0cd0b19340" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepDataClient/DatabaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepDataClient/DatabaseClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IUserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/model/Users.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/util/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/util/EventType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,6 +21,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -38,13 +44,18 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/com/sep/model" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Flavius-Alin\Desktop\Git OWN branches\SEP-Java-Server\SepJavaServer\src\main\java\com\sep\model" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.SepJavaServerApplication">
     <configuration name="SepJavaServerApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -56,6 +67,17 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -86,6 +108,8 @@
       <workItem from="1621698609849" duration="2541000" />
       <workItem from="1621963306166" duration="2905000" />
       <workItem from="1622365559952" duration="2294000" />
+      <workItem from="1622490108703" duration="6668000" />
+      <workItem from="1622532249286" duration="21586000" />
     </task>
     <servers />
   </component>
@@ -102,5 +126,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -26,8 +26,8 @@ public class UserController {
     }
 
     @PostMapping("/login")
-    public Users login(@RequestBody String username, String password) throws IOException {
-        Users loggedInUsers = userService.loginUser(username,password);
+    public Users login(@RequestBody String usernamePassword) throws IOException {
+        Users loggedInUsers = userService.loginUser(usernamePassword);
         return loggedInUsers;
     }
 
