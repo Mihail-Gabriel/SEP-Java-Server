@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74f22d85-541e-41ce-9cf7-9c0cd0b19340" name="Default Changelist" comment="">
+    <list default="true" id="74f22d85-541e-41ce-9cf7-9c0cd0b19340" name="Default Changelist" comment="ok">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/BranchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/FoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/BranchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/FoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IBranchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IFoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/model/Branch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/model/Food.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/model/OrderFood.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/model/Orders.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepDataClient/DatabaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepDataClient/DatabaseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IUserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IUserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/model/Users.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/model/Users.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/util/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/util/EventType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,8 +115,18 @@
       <workItem from="1621963306166" duration="2905000" />
       <workItem from="1622365559952" duration="2294000" />
       <workItem from="1622490108703" duration="6668000" />
-      <workItem from="1622532249286" duration="21586000" />
+      <workItem from="1622532249286" duration="21876000" />
+      <workItem from="1622614804514" duration="3604000" />
+      <workItem from="1622639411913" duration="753000" />
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <created>1622579693762</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1622579693762</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,5 +143,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
 </project>

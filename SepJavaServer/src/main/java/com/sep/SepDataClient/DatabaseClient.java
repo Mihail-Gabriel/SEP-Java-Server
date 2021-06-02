@@ -199,6 +199,28 @@ public class DatabaseClient  {
 
         return jsonResponse;
     }
+public String removeBranchFromDB(int id) throws IOException {
+    String jsonRequest;
+    String jsonResponse = "";
+    Request branchRequest= new Request(BRANCH_REMOVE_REQUEST, id);
+
+    jsonRequest = ow.writeValueAsString(branchRequest);
+    outToSocket.write(jsonRequest.getBytes());
+    System.out.println("Reguest to database --> "+jsonRequest);
+
+    ///END OF WRITING, START OF READING
+    byte[] jsonByte = new byte[256];
+    int bytesRead;
+    do {
+        bytesRead = inFromSocket.read(jsonByte);
+        jsonResponse += new String(jsonByte,0,bytesRead);
+
+    }
+    while (inFromSocket.available() > 0);
+    System.out.println("Received from DB: " + jsonResponse);
+
+    return jsonResponse;
+}
 
     public String getFoodFromDB() throws IOException {
         String jsonRequest;
