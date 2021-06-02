@@ -18,9 +18,14 @@ public class FoodController {
         String foodList = foodService.getFood();
         return foodList;
     }
+    @GetMapping("/getById")
+    public String getFoodById(int id) throws IOException {
+        String foodList = foodService.getFoodById(id);
+        return foodList;
+    }
     @PostMapping("/add")
-    public String addFood(@RequestBody String jsonBody)
-    {
-       return null;
+    public String addFood(@RequestBody String jsonBody) throws IOException {
+
+        return foodService.addFood(jsonBody);
     }
 }

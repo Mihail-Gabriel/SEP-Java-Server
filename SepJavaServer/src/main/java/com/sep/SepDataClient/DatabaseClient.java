@@ -1,6 +1,7 @@
 package com.sep.SepDataClient;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.ObjectWriter;
 import com.fasterxml.jackson.databind.type.ArrayType;
@@ -15,6 +16,7 @@ import java.io.*;
 import java.lang.reflect.Type;
 import java.net.Socket;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import static com.sep.util.EventType.*;
@@ -244,13 +246,32 @@ public String removeBranchFromDB(int id) throws IOException {
 
         return jsonResponse;
     }
+    public String getFoodByIdFromDB(int id) throws IOException {
+        List<Food> listResponse = new ArrayList<>();
+        Gson gson= new Gson();
+        String allFood = getFoodFromDB();
 
-    public String addFoodToDB(String foodList) throws IOException {
+
+        final ObjectMapper objectMapper = new ObjectMapper();
+        List<Food> fromJsonList = objectMapper.readValue(allFood, new TypeReference<List<Food>>(){});
+
+        for(int i= 0;i<fromJsonList.size();i++)
+        {
+            if (fromJsonList.get(i).getBranch().getBranchId()==id)
+            {
+                listResponse.add(fromJsonList.get(i));
+            }
+        }
+        return gson.toJson(listResponse);
+    }
+    public String addFoodToDB(String food) throws IOException {
         String jsonResponse = "";
 
         Gson gson = new Gson();
+        Food food1 = gson.fromJson(food, Food.class);
 
-        Request foodRequest = new Request(FOOD_ADD_REQUEST, foodList);
+
+        Request foodRequest = new Request(FOOD_ADD_REQUEST, food1);
 
         String requestJson = ow.writeValueAsString(foodRequest);
 

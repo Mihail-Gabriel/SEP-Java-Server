@@ -5,5 +5,6 @@ import java.io.IOException;
 public interface IFoodService {
 
     String getFood() throws IOException;
-    String addFood(String foodList) throws IOException;
+    String getFoodById(int id) throws IOException;
+    String addFood(String food) throws IOException;
 }

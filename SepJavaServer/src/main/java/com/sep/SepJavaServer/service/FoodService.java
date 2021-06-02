@@ -14,8 +14,14 @@ public class FoodService implements IFoodService{
     }
 
     @Override
-    public String addFood(String foodList) throws IOException {
+    public String getFoodById(int id) throws IOException {
         DatabaseClient databaseClient= new DatabaseClient();
-        return databaseClient.addFoodToDB(foodList);
+        return databaseClient.getFoodByIdFromDB(id);
+    }
+
+    @Override
+    public String addFood(String food) throws IOException {
+        DatabaseClient databaseClient= new DatabaseClient();
+        return databaseClient.addFoodToDB(food);
     }
 }
