@@ -8,15 +8,7 @@ public class Orders implements Serializable {
 
     private String username;
     private double price;
-    private Set<OrderFood> foodSet = new HashSet<OrderFood>();
 
-    public Set<OrderFood> getFoodSet() {
-        return foodSet;
-    }
-
-    public void setFoodSet(Set<OrderFood> foodSet) {
-        this.foodSet = foodSet;
-    }
 
     public String getUsername() {
         return username;

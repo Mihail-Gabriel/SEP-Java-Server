@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="74f22d85-541e-41ce-9cf7-9c0cd0b19340" name="Default Changelist" comment="ok">
+    <list default="true" id="74f22d85-541e-41ce-9cf7-9c0cd0b19340" name="Default Changelist" comment="orderFood added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/OrderFoodController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IOrderFoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IOrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/OrderFoodService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/OrderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepDataClient/DatabaseClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepDataClient/DatabaseClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/FoodController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/controller/FoodController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/FoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/FoodService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IFoodService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/SepJavaServer/service/IFoodService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/model/Orders.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/model/Orders.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sep/util/EventType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sep/util/EventType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +53,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -70,13 +74,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,7 +116,8 @@
       <workItem from="1622490108703" duration="6668000" />
       <workItem from="1622532249286" duration="21876000" />
       <workItem from="1622614804514" duration="3604000" />
-      <workItem from="1622639411913" duration="16237000" />
+      <workItem from="1622639411913" duration="17994000" />
+      <workItem from="1622704146854" duration="9958000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1622579693762</created>
@@ -119,7 +126,14 @@
       <option name="project" value="LOCAL" />
       <updated>1622579693762</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="methods for handle food items">
+      <created>1622667247050</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1622667247050</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -139,6 +153,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ok" />
-    <option name="LAST_COMMIT_MESSAGE" value="ok" />
+    <MESSAGE value="methods for handle food items" />
+    <MESSAGE value="orderFood added" />
+    <option name="LAST_COMMIT_MESSAGE" value="orderFood added" />
   </component>
 </project>
